@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Login page */
+.stu-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stu-login .login-container{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.login-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+.login-container .head12{
+    color: #9b5d9d;
+}
+.login-container form{
+    margin-left: -50px;
+}
+.login-container form .margin{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login-container form .margin1{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login-container form .form-label{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.login-container form .form-control{
+    width: 385px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-right: 8px;
+}
+.login-container .form-control::placeholder {
+    color:  #9fa7b9;
+    font-family: 'Poppins', sans-serif;
+}
+.login-container .margin input:focus{
+    border-color: #9b5d9d; 
+    outline: none;
+}
+.login-container .margin1 input:focus{
+    border-color: #9b5d9d; 
+    outline: none;
+}   
+.login-container .login-btn{
+    cursor: pointer;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    background-color: #9b5d9d;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.login-container a{
+   text-decoration: none;
+   cursor: pointer;
+}
+.login-container .login-btn:hover{
+    background-color: #9a399d;
+}
+.login-container .login-moreOpt{
+    width: 31vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login-container .login-google{
+    cursor: pointer;
+    width: 225px;
+    height: 48px;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login-container .login-google .google{
+    width: 35px;
+}
+.login-container .login-facebook{
+    cursor: pointer;
+    width: 243px;
+    height: 48px;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login-container .login-facebook .facebook{
+    width: 45px;
+}
+.login-container .login-google:hover{
+    background-color: rgb(231, 231, 231);
+}
+.login-container .login-facebook:hover{
+    background-color: rgb(231, 231, 231);
+}
+.stu-login .login-img{
+    /* border: 2px solid black; */
+    height: 99.6vh;
+}
+
+/* Sign Up Page */
+
+.stu-SignUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.stu-SignUp .signup-container{
+    /* border: 2px solid black; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 45vw;
+    margin: 30px 0 30px 0;
+    height: 1000px;
+}
+.signup-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+.signup-container .head12{
+    color: #9b5d9d;
+}
+.signup-container form{
+    margin-left: -50px;
+}
+.signup-container form .margin{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.signup-container form .margin1{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.signup-container form .form-label{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.signup-container form .form-control{
+    width: 385px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-right: 8px;
+}
+.signup-container .form-control::placeholder {
+    color:  #9fa7b9;
+    font-family: 'Poppins', sans-serif;
+}
+.signup-container .margin input:focus{
+    border-color: #9b5d9d; 
+    outline: none;
+}
+.signup-container .margin1 input:focus{
+    border-color: #9b5d9d; 
+    outline: none;
+}   
+.signup-container .signup-btn{
+    cursor: pointer;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    background-color: #9b5d9d;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.signup-container a{
+   text-decoration: none;
+   cursor: pointer;
+}
+.signup-container .signup-btn:hover{
+    background-color: #9a399d;
+}
+.signup-container .signup-moreOpt{
+    width: 31vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.signup-container .signup-google{
+    cursor: pointer;
+    width: 225px;
+    height: 48px;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.signup-container .signup-google .google{
+    width: 35px;
+}
+.signup-container .signup-facebook{
+    cursor: pointer;
+    width: 243px;
+    height: 48px;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.signup-container .signup-facebook .facebook{
+    width: 45px;
+}
+.signup-container .signup-google:hover{
+    background-color: rgb(231, 231, 231);
+}
+.signup-container .signup-facebook:hover{
+    background-color: rgb(231, 231, 231);
+}
+.stu-SignUp .signup-img{
+    margin-top: -280px;
+    /* border: 2px solid black; */
+}
