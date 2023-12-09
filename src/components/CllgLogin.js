@@ -6,10 +6,10 @@ function CllgLogin() {
     <>
     <div className='stu-login'>
     <div className='login-img'>
-        <img src={require('../images/6.jpg')} alt='img1'  width={1000}/>
+        <img src={require('../images/6.jpg')} alt='img1'  width={1050}/>
     </div>
     <div className='login-container'>
-    <img src={require('../images/logo.png')} alt='Logo'/>
+    <img className='login-logo' src={require('../images/logo.png')} alt='Logo'/>
         <h2>Login to continue with <span className='head12'>HTG Events</span></h2>
         <form>
             <div className="margin">

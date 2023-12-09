@@ -5,7 +5,7 @@ function Forget() {
     <>
     <div className='stu-login'>
     <div className='login-container'>
-    <img src={require('../images/logo.png')} alt='Logo'/>
+    <img className='login-logo' src={require('../images/logo.png')} alt='Logo'/>
         <h2>Forget Password</h2>
         <form>
             <div className="margin">
@@ -23,7 +23,7 @@ function Forget() {
         <br />
     </div>
     <div className='login-img'>
-        <img src={require('../images/1.jpg')} alt='img1'width={1100}/>
+        <img src={require('../images/1.jpg')} alt='img1'width={1050}/>
     </div>
     </div>
     </>

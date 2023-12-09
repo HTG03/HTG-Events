@@ -6,7 +6,7 @@ const Login = () => {
     <>
     <div className='stu-login'>
     <div className='login-container'>
-    <img src={require('../images/logo.png')} alt='Logo'/>
+    <img className='login-logo' src={require('../images/logo.png')} alt='Logo'/>
         <h2>Login as student with <span className='head12'>HTG Events</span></h2>
         <form>
             <div className="margin">
@@ -31,7 +31,7 @@ const Login = () => {
         </div>
     </div>
     <div className='login-img'>
-        <img src={require('../images/3.jpg')} alt='img1'/>
+        <img src={require('../images/3.jpg')} alt='img1' width={1050}/>
     </div>
     </div>
     </>
