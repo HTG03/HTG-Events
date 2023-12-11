@@ -9,7 +9,7 @@
     height: 100vh;
 }
 .stu-login .login-container{
-    width: 38vw;
+    width: 35vw;
     height: 100%;
     /* border: 2px solid black; */
     font-family: 'Poppins', sans-serif;
@@ -137,7 +137,7 @@
     /* margin-left: 300px; */
     margin-right: 0px;
     height: 99.6vh;
-    width: 62vw;
+    width: 65vw;
     display: flex;
     justify-content: center;
     
@@ -146,16 +146,14 @@
     
     width: 100%;
 }
-
 /* Sign Up Page */
 
 .stu-SignUp{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 .stu-SignUp .signup-container{
-    /* border: 2px solid black; */
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -165,7 +163,7 @@
     padding-top: 20px;
     border-radius: 10px;
     width: 45vw;
-    margin: 30px 0 30px 0;
+    margin: 30px 110px 30px 0;
     height: 1000px;
 }
 .signup-container img{
@@ -236,7 +234,6 @@
 }
 .signup-container .signup-moreOpt{
     width: 31vw;
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -282,6 +279,294 @@
     background-color: rgb(231, 231, 231);
 }
 .stu-SignUp .signup-img{
-    margin-top: -280px;
-    /* border: 2px solid black; */
+    position: fixed;
+    bottom: 120px;
+    left: 20px;
+}
+/* Media Queries for login page */
+/* Responsive for tablets */
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+
+    /* Login page */
+    .stu-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .stu-login .login-container{
+        width: 50vw;
+        height: 100%;
+    }
+    .login-container .login-moreOpt{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .login-container .login-google{
+        width: 250px;
+    }
+    .login-container .login-facebook{
+        width: 250px;
+    }
+    .stu-login .login-img{
+        margin-right: 0px;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .stu-login .login-img img{
+        
+        width: 100%;
+        height: 40%;
+    }
+   
+}
+/* Responsive for mini tablets */
+@media only screen and (max-width: 899px) and (min-width: 501px) {
+    .stu-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .stu-login .login-container{
+        width: 50vw;
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .login-container form .margin .form-label{
+        margin-left: 40px;
+    }
+    .login-container form .margin1 .form-label{
+        margin-left: 40px;
+    }
+    .login-container form .form-control{
+        width: 300px;
+        height: 25px;
+        margin-left: 40px;
+    }
+    .login-container .login-btn{
+        margin-left: 40px;
+    }
+    .login-container .login-moreOpt{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .login-container .login-google{
+        width: 250px;
+    }
+    .login-container .login-facebook{
+        width: 250px;
+    }
+    .stu-login .login-img{
+        margin-right: 0px;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .stu-login .login-img img{
+        
+        width: 100%;
+        height: 40%;
+    }
+}
+
+/* Responsive for small devices */
+@media only screen and (max-width: 500px){
+    .stu-login .login-container{
+        width: 92vw;
+        height: 100vh;
+        border-radius: 4px;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .stu-login .login-container .login-logo{
+        margin-top: 130px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .login-container form{
+        width: 100%;
+        margin: auto;
+    }
+    .login-container form .margin{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .login-container form .margin1{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .login-container form .form-control{
+        width: 300px;
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        font-size: 15px;
+        padding-top: 3px;
+    }
+    .login-container .login-moreOpt{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    .login-container .login-google{
+        width: 250px;
+        height: 45px;
+    }
+    .login-container .login-facebook{
+        width: 250px;
+        height: 45px;
+    }
+    .stu-login .login-img{
+        display: none;
+    }
+}
+/* Media Queries for sign-up page */
+/* Responsive for tablets */
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+    .stu-SignUp .signup-img{
+        position: fixed;
+        bottom: 500px;
+        margin-left: -100px;
+    }
+    .stu-SignUp .signup-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        padding-top: 20px;
+        border-radius: 10px;
+        width: 45vw;
+        padding-left: 15px;
+        padding-right: 5px;
+        margin: 30px 50px 30px 50px;
+        height: 94vh;
+    }
+    .signup-container .signup-moreOpt{
+        width: 31vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-container .signup-google{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .signup-container .signup-facebook{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+
+    }
+}
+/* Responsive for mini tablets */
+@media only screen and (max-width: 899px) and (min-width: 701px) {
+    .stu-SignUp .signup-img{
+        position: fixed;
+        bottom: 400px;
+        margin-left: -160px;
+    }
+    .stu-SignUp .signup-img video{
+        height: 280px; 
+    }
+    .stu-SignUp .signup-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        padding-top: 20px;
+        border-radius: 10px;
+        width: 50vw;
+        padding-left: 15px;
+        padding-right: 5px;
+        margin: 30px 50px 30px 50px;
+        height: 110vh;
+    }
+    .signup-container form .form-control{
+        width: 350px;
+        height: 28px;
+    }
+    .signup-container .signup-moreOpt{
+        width: 31vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-container .signup-google{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .signup-container .signup-facebook{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+/* Responsive for small devices */
+@media only screen and (max-width: 700px){
+    .stu-SignUp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .stu-SignUp .signup-img{
+        display: none;
+    }
+    .stu-SignUp .signup-container{
+        /* padding-top: 60px; */
+        /* padding-bottom: 40px; */
+        width: 100vw;
+        height: 1200px;
+        padding-left:10px;
+        padding-right: 0px;
+        margin: -60px 0px 0px 0px;
+        box-sizing: border-box;
+    }
+    .signup-container form .form-control{
+        width: 300px;
+        height: 30px;
+    }
+    .signup-container form .margin{
+        padding-left: 80px;
+    }
+    .signup-container form .margin1{
+        padding-left: 80px;
+    }
+    .signup-container .signup-btn {
+        margin-left: 37%;
+    }
+    .signup-container img{
+        width: 150px;
+        border-radius: 50%;
+    }
+    .signup-container .signup-moreOpt{
+        width: 31vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-container .signup-google{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .signup-container .signup-facebook{
+        width: 250px;
+        height: 45px;
+        font-size: 14px;
+    }   
 }
