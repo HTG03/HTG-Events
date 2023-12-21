@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Login page */
 .stu-login{
     /* position: absolute; */
@@ -401,17 +404,124 @@
   border-color: #007bff; 
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
+.hamburger{
+    padding: 5px;
+    cursor: 5px;
+    background: transparent;
+    border: none;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+/* Media Queries for Navbar */
+@media only screen and (max-width: 849px){
+    .navbar-container .navbar-contain1 img {
+        height: 60px;
+        width: 60px;
+    }
+    #login {
+       width: 5rem;
+       height: 2.4rem;
+       padding: 2px;
+       font-size: 12px;
+    }
+    .navbar-contain3{
+        margin-right: -2rem;
+    }
+    .hamburger{
+        visibility: visible;
+        opacity: 1;
+        font-size: 2.3rem;
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-contain2{
+        visibility: hidden;
+    }
+    .navbar-container .nav-btn{
+    padding: 5px;
+    cursor: 5px;
+    background: transparent;
+    border: none;
+    color: red;
+    }
+    .nav-btn {
+        position: absolute;
+        margin-bottom: 86vh;
+        margin-right: -80vw;
+        font-size: 2.3rem;
+    }
+    .navbar-container .navbar-contain2 ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right:20vw;
+        gap: 2rem;
+    }
+
+    .navbar-container .navbar-contain2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #9fa7b9;
+    }
+    .dropbtn{
+        background-color: #9fa7b9;
+    }
+   
+}
+@media only screen and (max-width: 1100px) and (min-width: 850px){
+    .navbar-container{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    .navbar-container .navbar-contain2 ul li{
+        text-decoration: none;
+        list-style: none;
+        margin-left: 20px;
+        margin-right:10px ;
+        font-size: 16.8px;
+        font-weight: 500;
+        cursor: pointer;
+     }
+     #login {
+        width: 6.5rem;
+        height: 2.4rem;
+        padding: 2px;
+    }
+}
+
 
 /* Footer CSS */
 .footer-container{
     margin-top: 50px;
-    /* border: 2px solid black; */
     width: 99.8vw;
     height: 35vh;
     display: flex;
+    flex-direction: column;
     background: white;
     font-family: 'Poppins', sans-serif;
     box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 29px 0px;
+}
+.footer-container .main-footer{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+.footer-container .main-footer h2{
+    margin-left: -3px;
 }
 .footer-container .footer-logo{
     margin-left: 80px;
@@ -453,6 +563,68 @@
     font-size: 18px;
     font-weight: 400;
     margin-top: 25px;
+}
+
+/* Media Queries for Footer */
+@media only screen and (max-width: 767px){
+    .footer-container .main-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
+        padding-left: 8vw;
+    }
+    .footer-container .footer-logo{
+        justify-content: center;
+        margin-left: -9vw;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+
+    }
+    .footer-container .footer-logo .footer-logo-img{
+        height: 120px;
+        width: 120px;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 1050px) and (min-width: 768px){
+    .footer-container .main-footer{
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        /* flex-direction: column; */
+        /* margin-right: 10px; */
+        margin-right: 80px;
+        margin-top: 10px;
+    
+    }
+    .footer-container .footer-logo{
+        justify-content: center;
+        margin-left: -3vw;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+    .footer-container .footer-logo .footer-logo-img{
+        height: 150px;
+        width: 150px;
+    }
+    .footer-container .m1{
+        width: 30vw;
+        height: 28vh ;
+        padding-right: 2px;
+        padding-left: 2px;
+        display: inline-block;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-left: 120px;
+        
+    }
+    /* .footer-container .imp-links m1{
+        margin-top: -40px;
+    } */
+
 }
 
 /* Media Queries for login page */

@@ -15,10 +15,11 @@ function Footer() {
   return isFooterHidden ? null : (
     <>
     <div className='footer-container'>
+      <div className='main-footer'>
       <div className="footer-logo">
-        <img src={require("../images/logo.png")} alt="" />
+        <img className='footer-logo-img' src={require("../images/logo.png")} alt="" />
       </div>
-      <div className="links m1">
+      <div className="links m1 r1">
         <h2>EVENTS</h2>
         <ul>
           <li>Fresher's Party</li>
@@ -29,7 +30,7 @@ function Footer() {
           <li>Corporate Event</li>
         </ul>
       </div>
-      <div className="imp-links m1">
+      <div className="imp-links m1 ">
       <h2>COMPANY</h2>
         <ul>
           <li>About</li>
@@ -57,10 +58,13 @@ function Footer() {
           </div>
         </ul>
       </div>
-    </div>
+      </div>
+      <br/>
       <div className="copyright-footer">
         <p className='copyright-content'>Copyright &copy; HTG-Events.com | All rights reserved</p>
       </div>
+    </div>
+      
     </>
   )
 }
